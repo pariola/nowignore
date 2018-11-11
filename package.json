@@ -1,0 +1,61 @@
+{
+  "name": "nowignore",
+  "displayName": "nowignore",
+  "description": "Adds selected files to .nowignore",
+  "version": "0.0.1",
+  "publisher": "pariola",
+  "engines": {
+    "vscode": "^1.8.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "now",
+    "zeit",
+    "nowignore"
+  ],
+  "icon": "res/zeit.png",
+  "activationEvents": [
+    "onCommand:nowignore.add",
+    "workspaceContains:**/now.json"
+  ],
+  "main": "./extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "nowignore.add",
+        "title": "Add to .nowignore"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "when": "resourceScheme == file",
+          "command": "nowignore.add",
+          "title": "Add to .nowignore",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.42",
+    "@types/node": "^8.10.25",
+    "eslint": "^4.11.0",
+    "typescript": "^2.6.1",
+    "vscode": "^1.1.21"
+  },
+  "dependencies": {
+    "fs-extra": "^7.0.1",
+    "upath": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pariola/nowignore.git"
+  }
+}
