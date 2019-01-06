@@ -1,6 +1,7 @@
 # nowignore README
 
-[![](https://vsmarketplacebadge.apphb.com/version-short/pariola.nowignore.svg)](https://marketplace.visualstudio.com/items?itemName=pariola.nowignore)
+[![](https://vsmarketplacebadge.apphb.com/version/pariola.nowignore.svg)](https://marketplace.visualstudio.com/items?itemName=pariola.nowignore)
+[![](https://vsmarketplacebadge.apphb.com/installs-short/pariola.nowignore.svg)](https://marketplace.visualstudio.com/items?itemName=pariola.nowignore)
 
 Adds a `.nowignore` file to your workspace and appends files/folders you want!
 
